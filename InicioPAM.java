@@ -34,40 +34,50 @@ public class InicioPAM
                                             "14. Todo tema académido debe ser revisado primeramente por parte del alumno con el docente, de no resolverse, pasar con su respectivo tutor, y de ser necesario con la coordinación  de tutores. En caso de no solucionarse pasar a la dirección del programa educativo (debe mantenerse este seguimiento de forma obligatoria) \n"
                                             "15. Cualquier situación no prevista en el presente reglamento pasar directamente con la dirección del programa educativo.\n "
                                             "16. El día destinado a entrega de calificaciones todos los estudiantes deben estar presentes, ese día se entregarán exámenes y se brindará retroalimentación \n"
-                                            "17. Este reglamento entra en vigor después de que se firme o se acepte por la mayoría de los estudiantes asistentes a la primera sesión de la materia, una vez firmado o aceptado por el 50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión.\n " );
+                                            "17. Este reglamento entra en vigor después de que se firme o se acepte por la mayoría de los estudiantes asistentes a la primera sesión de la materia, una vez firmado o aceptado por el 50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión.\n 
+                                            " );
     
     break;
 
     case "2": 
-    JOptionPane.showMessageDialog(null, "lineamientos Classroom");
+    JOptionPane.showMessageDialog(null, "Lineamientos Classroom:"
+                                         "Entregar los trabajos para su revision."
+                                         "Entregas en PDF."
+                                         "Avisos de clase."
+                                         "Entregas autorizadas con retraso. 5 Clificación Máxima."
+                                          );
     break;
 
    
     case "3":
-    JOptionPane.showMessageDialog(null, "Fechas de parciales");
+    JOptionPane.showMessageDialog(null, "Fechas de parciales"
+                                         "1.- Primer Parcial : 01 - 10 - 25"
+                                         "2.- Segundo Parcial: 05 - 10 - 25"
+                                         "3.- Tercer Parcial:  03 - 12 - 25"
+                                         "4.- Final:           08 - 12 - 25"
+                                     
+                                     
+                                     
+                                     
+                                     
+                                        ");
     break;
 
     case "4":
-    JOptionPane.showMessageDialog(null, "Porcentajes parciales");
+    JOptionPane.showMessageDialog(null, ""Porcentajes parciales:"                   
+                                                                       " 1P          2P          3P"
+                                         "Evidencias de conocimiento     40%         40%         20%"
+                                         "Evidencias de desempeño        20%         20%         10%"
+                                         "Evidencias de producto         30%         20%         40%"
+                                         "Proyecto Integrador            10%         20%         30%"           
+                                          
+                                         "");
     break;
 
     default:
-
-    
-    
-
-
-    
-
-
+         JOptionPane.showMessageDialog(null, "Saliendo del menú...");
 
    }
-
-
-
-
-
-
 
 }
 
