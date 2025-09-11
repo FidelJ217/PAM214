@@ -98,8 +98,52 @@ switch(typeCard ){
 
 }
 
-// BUCLES:
+// ITERADOR Ó BUCLES:
+let count = 50;
+let contar = 0
 
+while(count >= 0){
+    console.log(count);
+    count = count -1;
+}
+
+while(contar <= 50){
+    console.log(contar);
+    contar++;
+}
+
+let names = ["Yael", "Abidel", "Maneloco"];
+
+console.log(names[2]);  //Se le llama al indice al elemento donde se guardó
+
+console.log(names.length)   //Dar la longitud del arreglo creado
+
+//EJEMPLO DE ARREGLO PARA MOSTRAR LOS DATOS DEL ARREGLO GUARDADOS
+//UTILIZANDO UN FOR
+
+for( let index = 0; index < names.length; index++){
+    
+    console.log(names[index]);
+}
+
+
+function greeting(adios){
+    console.log('Holas' + adios);
+}
+
+greeting("Tuntunsahur");
+greeting("Tuntunsahur");
+greeting("Tuntunsahur");
+
+
+function add(n1, n2){
+    console.log(n1 * n2);
+}
+
+add(3, 2);
+add(3, 2);
+add(3, 2);
+add(3, 2);
 
 
 
