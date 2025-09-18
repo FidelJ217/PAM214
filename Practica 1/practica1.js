@@ -24,4 +24,15 @@ let resultado3 = cuadrado(25);
 
 console.log(resultado3);
 
+// EJERCICIO 3:
+
+
+const saludoPersonalizado = (nombre, edad) => "Hola, me llamo" + "" + nombre + " y tengo " + edad + "años";
+
+let mostrar = saludoPersonalizado("Isay",37);
+
+console.log(mostrar);
+
+
+
 
