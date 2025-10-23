@@ -1,5 +1,5 @@
 // 1. Imports: Zona de importaciones.
-import ContadorScreen from "./screens/ContadorScreen.js"
+import MenuScreen from "./screens/MenuScreen.js"
 //2.Main: Zona de componentes.
 
 
@@ -7,7 +7,7 @@ export default function App() {
 
 
   return (
-     <ContadorScreen></ContadorScreen>
+     <MenuScreen></MenuScreen>
   );
 }
 
