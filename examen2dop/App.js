@@ -1,6 +1,7 @@
 
 import { StyleSheet, Text, View, SafeAreaView, ImageBackground, Alert, ScrollView, Button } from 'react-native';
 import { useEffect, useState } from 'react';
+import { RefreshControl } from 'react-native-web';
 
 export default function App() {
 
@@ -31,7 +32,7 @@ export default function App() {
 
   if (showSplash) {
     return (
-      <ScrollView>
+
       <SafeAreaView style={{ flex: 1 }} >
         <ImageBackground
 
@@ -56,54 +57,93 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <ImageBackground
-        source={{
-          uri: 'https://wallpapercave.com/wp/wp3850825.jpg ',
-        }}
+    <SafeAreaView style={{ flex: 1 }} >
 
-        style={styles.background}
+
+      <ScrollView
+
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+
+        stickyHeaderIndices={[0]}
       >
 
-        <View style={styles.contenedorInfo} >
-
-          <Text> Juárez Torres Juan Fidel</Text>
-          <Text>Ingeniero en sistemas computacionales</Text>
-          <Text>Me llamo Fidel y tal y tal</Text>
-          <Text>Juanfidel10@hotmai.com</Text>
-          <Text>8331384009</Text>
-
-          <Button
-            title='EditarPerfil'
-            onPress={mostrarAlerta}
-
-          />
 
 
 
 
+        <View>
+
+
+
+          <ImageBackground
+            source={{
+              uri: 'https://wallpapercave.com/wp/wp3850825.jpg ',
+            }}
+
+            style={styles.background}
+          >
+
+            <View style={styles.container}>
+
+            <View style={styles.contenedorInfo} >
+
+              <Text style={styles.texto }> NOMBRE: Juárez Torres Juan Fidel</Text>
+              <Text  style={styles.texto } >PROFESIÓN / TITULO : Ingeniero en sistemas computacionales</Text>
+              <Text style={styles.texto } > BIOGRAFÍA: Me llamo Fidel y nací en Ciuda Madero, Tamaulipas, 
+                Tengo una gata llamda Milly, la quiero mucho y es mi mascota que tuve cuando tenia 12 años.
+                Actualmente vivo y estoy estudiando en Queretaro, en la universidad Politécnica de Querétaro.
+                Es algo dificil en algunos momentos, pero es diveritda.
+
+              </Text>
+              <Text style={styles.texto } > CORREO ELECTRÓNICO: Juanfidel10@hotmai.com</Text>
+              <Text style={styles.texto }  > NÚMERO TELÉFONICO: 8331384009</Text>
+              
+              <View style={styles.botones} >
+              <Button
+                title='EditarPerfil'
+                onPress={mostrarAlerta}
+
+              />
+              </View>
+
+              </View>
+
+
+
+
+            </View>
+
+
+
+
+
+
+          </ImageBackground>
         </View>
 
 
 
 
-
-
-      </ImageBackground>
-
-
+      </ScrollView >
     </SafeAreaView>
+
   );
 }
 
 
 
 const styles = StyleSheet.create({
+
+
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 400,
+     marginBottom: 1,
+
   },
 
   pantallaCarga: {
@@ -111,7 +151,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     resizeMode: "cover"
-
 
   },
 
@@ -128,8 +167,22 @@ const styles = StyleSheet.create({
   },
 
   contenedorInfo: {
-    backgroundColor: "#f5eded7b"
+    backgroundColor: "#ffffff92",
+    padding: 10,
+    borderRadius: 15,
+   textAlign: "center",
+   marginBottom: 10,
 
+
+  },
+
+  texto:{
+    marginBottom:10,
+  },
+
+  botones:{
+
+    gap:100
   },
 
 
